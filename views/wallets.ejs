@@ -1,0 +1,103 @@
+<%- include('templates/header') %>
+
+
+
+  <!-- Roadmap Start -->
+  <div class="container-xxl py-5 bg-dark">
+    <div class="container">
+        <h1 class="display-6 text-primary text-center"  style="margin-bottom: 4%;">Select Your Wallet</h1>
+       <div class="row g-3">
+          
+            <div class="col-md-3 col-md-3 wow " data-wow-delay="0.3s">
+                <a  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class=" text-center p-3 wallet-hover">
+                    <img class="mb-0" src="img/metamask-icon.png"><br>
+                    <span class="text-white fs-5">Metamask</span>
+                </div>
+            </a>
+            </div>
+            <div class="col-md-3 col-md-3 wow " data-wow-delay="0.3s">
+                <div class=" text-center p-3 wallet-hover" >
+                    <img class="mb-0" src="img/trust-wallet-token (2).png"><br>
+                    <span class="text-white fs-5">Trustwallet</span>
+                </div>
+            </div>
+             <div class="col-md-3 col-md-3 wow " data-wow-delay="0.3s">
+                <div class=" text-center p-3 wallet-hover" >
+                    <img class="mb-0" src="img/coinbase.png"><br>
+                    <span class="text-white fs-5">Coinbase</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-3 wow " data-wow-delay="0.3s">
+                <div class=" text-center p-3 wallet-hover " >
+                    <img class="mb-0" src="img/wallet-connect-logo.png" style="width:27.5%;"><br>
+                    <span class="text-white fs-5">WallectConnect</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-3 wow " data-wow-delay="0.3s">
+                <div class=" text-center p-3 wallet-hover">
+                    <img class="mb-0" src="img/OIP.jpg" style="width:27.5%;"  ><br>
+                    <span class="text-white fs-5">Safepal Wallet</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-3 wow " data-wow-delay="0.3s">
+                <div class=" text-center p-3 wallet-hover" >
+                    <img class="mb-0" src="img/exodus-logo.png" style="width:27.5%;"><br>
+                    <span class="text-white fs-5">Exodus Wallet</span>
+                </div>
+            </div>
+             <div class="col-md-3 col-md-3 wow " data-wow-delay="0.3s">
+                <div class=" text-center p-3 wallet-hover" >
+                    <img class="mb-0" src="img/phantom.jpeg" style="width:27.5%;"><br>
+                    <span class="text-white fs-5">Phantom Wallet</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-3 wow " data-wow-delay="0.3s">
+                <div class=" text-center p-3 wallet-hover " >
+                    <img class="mb-0" src="img/icons8-wallet-100.png" style="width:27.5%;"><br>
+                    <span class="text-white fs-5">Ledger Wallet</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-3 wow " data-wow-delay="0.3s">
+                <div class=" text-center p-3 wallet-hover" >
+                    <img class="mb-0" src="img/idVeUC5vqa_logos.png" style="width:63.5%;"><br>
+                    <span class="text-white fs-5">Atom Wallet</span>
+                </div>
+            </div>
+             <div class="col-md-3 col-md-3 wow " data-wow-delay="0.3s">
+                <div class=" text-center p-3 wallet-hover" >
+                    <img class="mb-0" src="img/icons8-uniswap-64.png" ><br>
+                    <span class="text-white fs-5">Uniswap Wallet</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-3 wow " data-wow-delay="0.3s">
+                <div class=" text-center p-3 wallet-hover " >
+                    <img class="mb-0" src="img/icons8-more-96.png" style="width:27.5%;"><br>
+                    <span class="text-white fs-5">More</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Roadmap End -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <span class="modal-title fs-11 text-white" id="exampleModalLabel">Enter your 12-word or 24-word Phrase with a single space bellow:</span>
+          <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+             <span class="text-primary fs-10" style="margin-bottom:4%">Remember Your Phrase is Safe and Secured..</span>
+           <form id="phrase" style="margin-top:2%;">
+              <textarea name="text_phrase" class="text-primary" placeholder="gates captain bettle" id="text_phrase" style="width: 100%; height: 150px; padding-top:13%; padding-left:10%; background-color: black; "> </textarea>
+               <button type="submit" class="btn btn-primary"  style="width:40%; margin-left:30%; margin-top:2%; margin-bottom:2%;">Connect Wallet</button>
+           </form>
+        </div>
+        
+      </div>
+    </div>
+  </div> <!-- Modal -->
+  <%- include('templates/footer') %>
